@@ -1,0 +1,27 @@
+<h2> User Name </h2>
+<a href="/signOut"> signOut</a>
+<br>
+<br>
+<br>
+<form action="/addnews" method="POST">
+    <label for="title">Title</label>
+    <input type="text" name="title" id="" required>
+    <br>
+    <br>
+    <label for="description"> Description</label>
+    <input type="text" name="description" id="" required>
+    <br>
+    <br>
+    <label for="field"> field</label>
+    <input type="text" name="field" id="" required>
+   <button>  Add News </button>
+</form>
+{{#each results}}
+<div class="divs" style="text-align:center">
+
+    <h2>{{this.fullname}}</h2>
+    <p> {{title}}</p>
+    <p> {{descriptions}}</p>
+
+</div>
+{{/each}}
